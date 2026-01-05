@@ -1,4 +1,4 @@
-Goldstein capitulo 1 laboratorio con OpenGL
+Goldstein capitulos 1 y 2 laboratorio con OpenGL
 
 Proposito
 
@@ -20,6 +20,9 @@ Escenas
 3 Oscilador armonico con arrastre
 4 Fuerza central inversa al cuadrado tipo Kepler
 5 Restriccion holonoma a un circulo con una fuerza hacia el origen
+6 Oscilador con rigidez dependiente del tiempo
+7 Noether por rotacion en fuerza central imprime velocidad areolar
+8 Noether por traslacion en x gravedad sin arrastre imprime px
 
 Integradores
 
@@ -28,7 +31,7 @@ La diferencia se nota cuando subes el paso de tiempo.
 
 Controles
 
-1 a 5 Cambiar escena
+1 a 8 Cambiar escena
 Espacio Pausa
 R Reiniciar
 I Cambiar integrador
@@ -81,3 +84,15 @@ Este programa te deja ver
 que significa aceleracion como derivada de la velocidad
 que significa fuerza como causa del cambio de momento lineal
 y como una ligadura puede imponer una geometria al movimiento
+
+Capitulo 2 trata de principios variacionales, simetrias y conservaciones.
+Este programa te deja comprobar tres ideas que suelen decirse como dogma
+
+Si el lagrangiano no depende del tiempo, la energia se conserva.
+En la escena 6 la rigidez cambia con el tiempo y la energia deja de ser constante.
+
+Si el lagrangiano es invariante bajo rotaciones, el momento angular se conserva.
+En la escena 7 se imprime Lz y tambien la velocidad areolar para ver la segunda ley de Kepler en accion.
+
+Si el lagrangiano no depende de una coordenada, su momento conjugado se conserva.
+En la escena 8 el potencial depende de y pero no de x, por eso px se mantiene constante.
